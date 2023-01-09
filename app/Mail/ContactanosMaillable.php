@@ -19,7 +19,7 @@ class ContactanosMaillable extends Mailable
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($contacto)
     {
         //RECIVIENDO PARAMETROS
         $this->from($contacto['correo']);

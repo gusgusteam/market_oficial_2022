@@ -8,7 +8,7 @@
             <div class="carousel-container">
               <div class="carousel-content container">
                 <h2 class="animate__animated animate__fadeInDown">BIENVENIDO...<span></span></h2>
-                <a href="{{route('contactanos.index')}}">CORREO</a>
+                <a class="btn btn-danger" href="{{route('contactanos.index')}}">CORREO</a>
               </div>
             </div>
           </div>
