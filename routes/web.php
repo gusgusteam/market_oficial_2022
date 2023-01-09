@@ -5,6 +5,7 @@ use App\Http\Controllers\CalzadoAlmacenController;
 use App\Http\Controllers\CalzadoController;
 use App\Http\Controllers\CategoriaController;
 use App\Http\Controllers\ClienteController;
+use App\Http\Controllers\ContactanosController;
 use App\Http\Controllers\LoginServer;
 use App\Http\Controllers\MarcaController;
 use App\Http\Controllers\MarcaModeloController;
@@ -187,5 +188,8 @@ Route::get('/pdfCompras', [PdfController::class, 'generarPDFCompra'])->name('pdf
 Route::get('/pdfVentas', [PdfController::class, 'generarPDFVenta'])->name('pdf.ventas');
 Route::get('/pdfPedidos', [PdfController::class, 'generarPDFPedido'])->name('pdf.pedidos');
 
+//Envio de Correo
+Route::get('correo',[ContactanosController::class,'index'])->name('contactanos.index');
+Route::post('correo/enviar',[ContactanosController::class,'store'])->name('contactanos.store');
 
 
